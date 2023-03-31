@@ -20,6 +20,6 @@ This web application currently does not have a view since it is just created for
 `MONGO_URI=`
 
 ## TODO
-- [ ] Update controller to allow for task editing and update
+- [x] Update controller to allow for task editing and update
 - [ ] Create views for the application
 - [ ] Create authentication system so each user will have their own defined tasks to manage instead
