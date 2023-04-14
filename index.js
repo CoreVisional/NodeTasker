@@ -7,6 +7,7 @@ const connectDB = require('./config/db');
 require('dotenv').config();
 
 // Task Middleware
+app.use(express.static('./public'))
 app.use(express.json())
 
 // Task Routes
