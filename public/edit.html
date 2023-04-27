@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon"/>
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <!-- Bootstrap 5 CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css"/>
+    <title>Task Manager</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form class="task-form my-5">
+                    <h1 class="text-center mb-4">Task Manager</h1>
+                    <div class="input-group mb-3">
+                        <input type="text" name="taskName" id="taskName" class="form-control task-input" placeholder="e.g. Buy Milk" aria-label="Task Name" aria-describedby="button-addon2"/>
+                        <button class="btn btn-primary" type="submit" id="button-addon2">Add Task</button>
+                    </div>
+                    <div class="form-alert"></div>
+                </form>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <section class="task-container">
+                    <p class="loading-text text-center mb-4">Loading...</p>
+                    <div class="tasks"></div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <!-- Axios JS -->
+    <script sec="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.5/axios.min.js"></script>
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js"></script>
+</body>
+</html>
